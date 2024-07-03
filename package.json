@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7",
+    "stack": "^0.1.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "heroku-app",
+  "version": "1.0.0",
+  "description": "my first app",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Magnus Teschner",
+  "license": "MIT"
+}
