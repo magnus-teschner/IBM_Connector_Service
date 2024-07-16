@@ -181,6 +181,7 @@ function getRandomAttributes() {
 
 
 app.get('/prediction', (req, res) => {
+    /*
     (async () => {
         try {
             const token = await getToken();
@@ -268,7 +269,11 @@ app.get('/prediction', (req, res) => {
         }
     })();
     
-    
+    */
+    let final_pred = Math.round(Math.random());
+    let final_text
+    final_pred == 0 ?final_text = "No risk of Attrition, the Employee will probably not leave the company!" : final_text = "Risk of Attrition, Employee will probably leave the company."
+    res.json({prediction: final_pred, text: final_text})
 });
 
 app.get('/', (req, res) => {
